@@ -1,15 +1,15 @@
 import tokenizers
 from tokenizers import normalizers
 from tokenizers import pre_tokenizers
-from tokenizers.processors import TemplateProcessing
 
 from typing import Counter
-from typing import DefaultDict
+
+import torch
 
 class TokenizerBPE(tokenizers.models.Model):
     def __init__(self, max_vocab_size=30000):
         self.max_vocab_size = max_vocab_size
-        self.vocab = ['[UNK]']
+        self.vocab = ['[UNK]', '_sow', '_eow']
         self.token_counter = Counter()
         self.splits = {}
         self.merges = {}
@@ -31,20 +31,39 @@ class TokenizerBPE(tokenizers.models.Model):
     def encode(self, sequence):
         normalized = self._normalize(sequence)
         pre_tokenized = self._pre_tokenize(normalized)
+        splits = [["_sow", *word, "_eow"] for word, offset in pre_tokenized]
         ids = []
-        for word, offset in pre_tokenized:
-            if not (word in self.key_to_index):
-                ids.append(self.key_to_index['[UNK]'])
-            else:
-                ids.append(self.key_to_index[word])
+
+        for j, split in enumerate(splits):
+            i = 0
+            while (i < len(split)):
+                if (i != len(split) - 1 and (split[i], split[i + 1]) in self.merges):
+                    split = split[:i] + [self.merges[(split[i], split[i + 1])]] + split[i + 2:]
+                else:
+                    i += 1
+            splits[j] = split
+        for split in splits:
+            for token in split:
+                if token not in self.vocab:
+                    ids.append(self.key_to_index['[UNK]'])
+                else:
+                    ids.append(self.key_to_index[token])
+
         return {
             "ids": ids
         }
 
     def decode(self, ids):
         text = ''
+        isWord = False
         for id in ids:
-            text += ' ' + self.index_to_key[id]
+            if id == self.key_to_index['_sow']:
+                isWord = True
+            elif id == self.key_to_index['_eow']:
+                text += ' '
+                isWord = False
+            else:
+                text += self.index_to_key[id]
         return text.strip()
 
     def _collect_vocab_from_splits(self, splits):
@@ -55,53 +74,95 @@ class TokenizerBPE(tokenizers.models.Model):
 
 
     def _merge_splits(self, splits, token):
+        final_token = token[0] + token[1]
         for word, split in splits.items():
-            new_split = []
-            i = 0
-            while (i < len(split)):
-                if (i != len(split) - 1 and (split[i], split[i + 1]) == token):
-                    new_split.append(split[i] + split[i + 1])
-                    i += 2
-                else:
-                    new_split.append(split[i])
-                    i += 1
-            splits[word] = new_split
+            if (final_token in word):
+                new_split = []
+                i = 0
+                while (i < len(split)):
+                    if (i != len(split) - 1 and (split[i], split[i + 1]) == token):
+                        new_split.append(split[i] + split[i + 1])
+                        i += 2
+                    else:
+                        new_split.append(split[i])
+                        i += 1
+                splits[word] = new_split
         return splits
 
-    def _calc_freq_pairs(self, splits):
-        pairs_freqs = Counter()
+    def _add_freq_pairs(self, splits, pairs_freqs, final_token=None):
         for word, split in splits.items():
-            for i in range(len(split) - 1):
-                pairs_freqs[(split[i], split[i + 1])] += self.token_counter[word] # add frequency of this word from all texts
+            if (final_token):
+                if (final_token in word):
+                    for i in range(len(split) - 1):
+                        pairs_freqs[(split[i], split[i + 1])] += self.token_counter[word] # add frequency of this word from all texts
+            else:
+                for i in range(len(split) - 1):
+                    pairs_freqs[(split[i], split[i + 1])] += self.token_counter[word] # add frequency of this word from all texts
+        return pairs_freqs
+    def _rem_freq_pairs(self, splits, pairs_freqs, final_token):
+        for word, split in splits.items():
+            if (final_token in word):
+                    for i in range(len(split) - 1):
+                        pairs_freqs[(split[i], split[i + 1])] -= self.token_counter[word] # remove frequency of this word from all texts
         return pairs_freqs
 
     def train(self, corpus):
         _ = [self._pre_tokenize(self._normalize(text), train=True) for text in corpus]
+
         splits = {}
         for token in self.token_counter.keys():
             splits[token] = [*token]
 
         self._collect_vocab_from_splits(splits)
+        pairs_freqs = self._add_freq_pairs(splits, Counter())
 
         while (len(self.vocab) < self.max_vocab_size):
-            pairs_freqs = self._calc_freq_pairs(splits)
 
             most_freq = pairs_freqs.most_common(1)
             if (most_freq):
                 new_token = most_freq[0][0][0] + most_freq[0][0][1]
                 self.vocab.append(new_token)
                 self.merges[most_freq[0][0]] = new_token
+
+                pairs_freqs = self._rem_freq_pairs(splits, pairs_freqs, new_token) # remove calculated freqs for words there this token is
+
                 splits = self._merge_splits(splits, most_freq[0][0])
+
+                pairs_freqs = self._add_freq_pairs(splits, pairs_freqs, new_token) # add freqs for words there last token was merged
             else: # All corpus in vocab
                 break
-        self.splits = splits
 
         self.key_to_index = {}
         for i, token in enumerate(self.vocab):
             self.key_to_index[token] = i
         self.index_to_key = self.vocab
 
-t = TokenizerBPE()
-t.train(["Привет але але", "Привет пока, а че"])
+class Collator():
+    def __init__(self, tokenizer):
+        self.tokenizer = tokenizer
 
-print(t.decode(t.encode("Привет пока абабаопа")['ids']))
+    def pad_and_prepare_seq(self, texts, labels):
+        ids = [self.tokenizer.encode(text)['ids'] for text in texts]
+        max_seq = -1
+        for id in ids:
+            for i in id:
+                max_seq = max(max_seq, i)
+
+        inputs = torch.zeros(size=(len(ids), max_seq))
+        for (i, item) in enumerate(ids):
+            for (j, id) in enumerate(item):
+                inputs[i][j] = id
+        return inputs.long(), torch.tensor(labels)
+
+    def __call__(self, batch):
+        texts, labels = [], []
+        for item in batch:
+            texts.append(item[0])
+            labels.append(item[1])
+        inputs, labels = self.pad_and_prepare_seq(texts, labels)
+        return (inputs, labels)
+
+if __name__ == "__main__":
+    bpe = TokenizerBPE()
+    bpe.train(["Привет пока але", "Привет, нет здравствуй"])
+    print(bpe.decode(bpe.encode('але а что такое здравствуй')['ids']))
