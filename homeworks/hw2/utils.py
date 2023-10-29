@@ -137,7 +137,7 @@ class TokenizerBPE(tokenizers.models.Model):
             self.key_to_index[token] = i
         self.index_to_key = self.vocab
 
-class Collator():
+class Collator(object):
     def __init__(self, tokenizer):
         self.tokenizer = tokenizer
 
@@ -148,11 +148,11 @@ class Collator():
             for i in id:
                 max_seq = max(max_seq, i)
 
-        inputs = torch.zeros(size=(len(ids), max_seq))
+        inputs = torch.zeros((len(ids), max_seq), dtype=torch.long)
         for (i, item) in enumerate(ids):
             for (j, id) in enumerate(item):
                 inputs[i][j] = id
-        return inputs.long(), torch.tensor(labels)
+        return inputs, torch.tensor(labels, dtype=torch.long)
 
     def __call__(self, batch):
         texts, labels = [], []
@@ -160,7 +160,7 @@ class Collator():
             texts.append(item[0])
             labels.append(item[1])
         inputs, labels = self.pad_and_prepare_seq(texts, labels)
-        return (inputs, labels)
+        return inputs, labels
 
 if __name__ == "__main__":
     bpe = TokenizerBPE()
