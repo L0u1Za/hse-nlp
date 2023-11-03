@@ -56,14 +56,14 @@ class TokenizerBPE(tokenizers.models.Model):
     def decode(self, ids):
         text = ''
         isWord = False
-        for id in ids:
-            if id == self.key_to_index['_sow']:
+        for cur_id in ids:
+            if cur_id == self.key_to_index['_sow']:
                 isWord = True
-            elif id == self.key_to_index['_eow']:
+            elif cur_id == self.key_to_index['_eow']:
                 text += ' '
                 isWord = False
             else:
-                text += self.index_to_key[id]
+                text += self.index_to_key[cur_id]
         return text.strip()
 
     def _collect_vocab_from_splits(self, splits):
@@ -142,25 +142,26 @@ class Collator(object):
         self.tokenizer = tokenizer
 
     def pad_and_prepare_seq(self, texts, labels):
-        ids = [self.tokenizer.encode(text)['ids'] for text in texts]
-        max_seq = -1
-        for id in ids:
-            for i in id:
-                max_seq = max(max_seq, i)
+        batch_ids = [self.tokenizer.encode(text)['ids'] for text in texts]
+        max_seq_len = -1
+        seq_lengths = []
+        for item_ids in batch_ids:
+            seq_lengths.append(len(item_ids))
+            max_seq_len = max(max_seq_len, len(item_ids))
 
-        inputs = torch.zeros((len(ids), max_seq), dtype=torch.long)
-        for (i, item) in enumerate(ids):
-            for (j, id) in enumerate(item):
-                inputs[i][j] = id
-        return inputs, torch.tensor(labels, dtype=torch.long)
+        inputs = torch.zeros((len(batch_ids), max_seq_len), dtype=torch.long)
+        for (i, item_ids) in enumerate(batch_ids):
+            for (j, cur_id) in enumerate(item_ids):
+                inputs[i][j] = cur_id
+        return inputs, torch.tensor(labels, dtype=torch.long), seq_lengths
 
     def __call__(self, batch):
         texts, labels = [], []
         for item in batch:
             texts.append(item[0])
             labels.append(item[1])
-        inputs, labels = self.pad_and_prepare_seq(texts, labels)
-        return inputs, labels
+        inputs, labels, seq_lengths = self.pad_and_prepare_seq(texts, labels)
+        return inputs, labels, seq_lengths
 
 if __name__ == "__main__":
     bpe = TokenizerBPE()
