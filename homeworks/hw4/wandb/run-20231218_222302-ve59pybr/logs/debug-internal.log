@@ -1,0 +1,210 @@
+2023-12-18 22:23:02,982 INFO    StreamThr :9136 [internal.py:wandb_internal():86] W&B internal server running at pid: 9136, started at: 2023-12-18 22:23:02.980828
+2023-12-18 22:23:02,984 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status
+2023-12-18 22:23:02,993 INFO    WriterThread:9136 [datastore.py:open_for_write():85] open: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222302-ve59pybr\run-ve59pybr.wandb
+2023-12-18 22:23:02,994 DEBUG   SenderThread:9136 [sender.py:send():380] send: header
+2023-12-18 22:23:03,090 DEBUG   SenderThread:9136 [sender.py:send():380] send: run
+2023-12-18 22:23:03,951 INFO    SenderThread:9136 [dir_watcher.py:__init__():211] watching files in: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222302-ve59pybr\files
+2023-12-18 22:23:03,951 INFO    SenderThread:9136 [sender.py:_start_run_threads():1122] run started: ve59pybr with start time 1702927382.982828
+2023-12-18 22:23:03,963 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: check_version
+2023-12-18 22:23:03,964 DEBUG   SenderThread:9136 [sender.py:send_request():407] send_request: check_version
+2023-12-18 22:23:04,288 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: run_start
+2023-12-18 22:23:04,306 DEBUG   HandlerThread:9136 [system_info.py:__init__():32] System info init
+2023-12-18 22:23:04,306 DEBUG   HandlerThread:9136 [system_info.py:__init__():47] System info init done
+2023-12-18 22:23:04,306 INFO    HandlerThread:9136 [system_monitor.py:start():194] Starting system monitor
+2023-12-18 22:23:04,307 INFO    SystemMonitor:9136 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-12-18 22:23:04,307 INFO    HandlerThread:9136 [system_monitor.py:probe():214] Collecting system info
+2023-12-18 22:23:04,312 INFO    SystemMonitor:9136 [interfaces.py:start():190] Started cpu monitoring
+2023-12-18 22:23:04,313 INFO    SystemMonitor:9136 [interfaces.py:start():190] Started disk monitoring
+2023-12-18 22:23:04,314 INFO    SystemMonitor:9136 [interfaces.py:start():190] Started gpu monitoring
+2023-12-18 22:23:04,327 INFO    SystemMonitor:9136 [interfaces.py:start():190] Started memory monitoring
+2023-12-18 22:23:04,339 INFO    SystemMonitor:9136 [interfaces.py:start():190] Started network monitoring
+2023-12-18 22:23:04,347 DEBUG   HandlerThread:9136 [system_info.py:probe():196] Probing system
+2023-12-18 22:23:04,348 DEBUG   HandlerThread:9136 [system_info.py:_probe_git():181] Probing git
+2023-12-18 22:23:04,356 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:04,357 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:04,511 DEBUG   HandlerThread:9136 [system_info.py:_probe_git():189] Probing git done
+2023-12-18 22:23:04,511 DEBUG   HandlerThread:9136 [system_info.py:probe():244] Probing system done
+2023-12-18 22:23:04,511 DEBUG   HandlerThread:9136 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.10.5', 'heartbeatAt': '2023-12-18T19:23:04.347021', 'startedAt': '2023-12-18T19:23:02.965829', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/L0u1Za/hse-nlp', 'commit': '94964c4fc91bfe39cf342b6157e0f91482d34b85'}, 'email': 'luiza.nigogosova@leroymerlin.ru', 'root': 'C:/Users/60130060/hse-nlp', 'host': 'HQ6016', 'username': '60130060', 'executable': 'c:\\Python310\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2803.0, 'min': 0.0, 'max': 2803.0}, 'cpu_freq_per_core': [{'current': 2803.0, 'min': 0.0, 'max': 2803.0}], 'disk': {'/': {'total': 475.33300399780273, 'used': 431.4040985107422}}, 'gpu': 'NVIDIA GeForce MX450', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce MX450', 'memory_total': 2147483648}], 'memory': {'total': 15.788383483886719}}
+2023-12-18 22:23:04,511 INFO    HandlerThread:9136 [system_monitor.py:probe():224] Finished collecting system info
+2023-12-18 22:23:04,512 INFO    HandlerThread:9136 [system_monitor.py:probe():227] Publishing system info
+2023-12-18 22:23:04,512 DEBUG   HandlerThread:9136 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-18 22:23:04,515 DEBUG   HandlerThread:9136 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-18 22:23:04,516 INFO    HandlerThread:9136 [system_monitor.py:probe():229] Finished publishing system info
+2023-12-18 22:23:04,527 DEBUG   SenderThread:9136 [sender.py:send():380] send: files
+2023-12-18 22:23:04,527 INFO    SenderThread:9136 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-12-18 22:23:04,547 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-18 22:23:04,547 DEBUG   SenderThread:9136 [sender.py:send_request():407] send_request: stop_status
+2023-12-18 22:23:04,550 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-18 22:23:04,884 DEBUG   SenderThread:9136 [sender.py:send():380] send: telemetry
+2023-12-18 22:23:04,884 DEBUG   SenderThread:9136 [sender.py:send():380] send: config
+2023-12-18 22:23:04,885 DEBUG   SenderThread:9136 [sender.py:send():380] send: metric
+2023-12-18 22:23:04,885 DEBUG   SenderThread:9136 [sender.py:send():380] send: telemetry
+2023-12-18 22:23:04,885 DEBUG   SenderThread:9136 [sender.py:send():380] send: metric
+2023-12-18 22:23:04,885 WARNING SenderThread:9136 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-12-18 22:23:04,886 DEBUG   SenderThread:9136 [sender.py:send():380] send: telemetry
+2023-12-18 22:23:04,958 INFO    Thread-16 :9136 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222302-ve59pybr\files\output.log
+2023-12-18 22:23:04,959 INFO    Thread-16 :9136 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222302-ve59pybr\files\wandb-metadata.json
+2023-12-18 22:23:04,960 INFO    Thread-16 :9136 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222302-ve59pybr\files\requirements.txt
+2023-12-18 22:23:05,201 INFO    wandb-upload_0:9136 [upload_job.py:push():131] Uploaded file C:\Users\60130060\AppData\Local\Temp\tmpm040mzd8wandb\ezz7pih7-wandb-metadata.json
+2023-12-18 22:23:06,377 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:06,377 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:06,983 INFO    Thread-16 :9136 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222302-ve59pybr\files\output.log
+2023-12-18 22:23:07,999 INFO    Thread-16 :9136 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222302-ve59pybr\files\output.log
+2023-12-18 22:23:08,401 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:08,401 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:08,977 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:23:10,419 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:10,419 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:12,443 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:12,443 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:14,036 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:23:14,468 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:14,468 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:16,493 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:16,493 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:18,514 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:18,514 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:19,088 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:23:19,555 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-18 22:23:19,572 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-18 22:23:19,573 DEBUG   SenderThread:9136 [sender.py:send_request():407] send_request: stop_status
+2023-12-18 22:23:20,533 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:20,533 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:22,555 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:22,555 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:24,571 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:24,571 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:24,807 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:23:26,597 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:26,598 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:28,616 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:28,617 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:29,863 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:23:30,646 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:30,646 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:32,667 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:32,667 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:34,570 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-18 22:23:34,587 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-18 22:23:34,588 DEBUG   SenderThread:9136 [sender.py:send_request():407] send_request: stop_status
+2023-12-18 22:23:34,717 ERROR   gpu       :9136 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-18 22:23:34,730 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:34,730 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:35,805 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:23:36,314 INFO    Thread-16 :9136 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222302-ve59pybr\files\config.yaml
+2023-12-18 22:23:36,746 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:36,746 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:38,769 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:38,769 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:40,792 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:40,792 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:41,101 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:23:42,813 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:42,813 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:44,835 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:44,836 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:46,152 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:23:46,864 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:46,865 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:48,878 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:48,878 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:49,581 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-18 22:23:49,597 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-18 22:23:49,599 DEBUG   SenderThread:9136 [sender.py:send_request():407] send_request: stop_status
+2023-12-18 22:23:50,904 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:50,905 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:51,789 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:23:52,925 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:52,925 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:54,953 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:54,954 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:56,851 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:23:56,975 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:56,976 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:58,999 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:23:58,999 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:01,015 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:01,015 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:01,897 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:24:03,033 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:03,034 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:04,342 DEBUG   SystemMonitor:9136 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-12-18 22:24:04,344 DEBUG   SenderThread:9136 [sender.py:send():380] send: stats
+2023-12-18 22:24:04,592 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-18 22:24:04,609 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-18 22:24:04,609 DEBUG   SenderThread:9136 [sender.py:send_request():407] send_request: stop_status
+2023-12-18 22:24:05,080 ERROR   gpu       :9136 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-18 22:24:05,092 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:05,092 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:06,909 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:24:07,109 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:07,109 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:09,138 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:09,138 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:11,158 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:11,158 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:12,530 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:24:12,690 INFO    Thread-16 :9136 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222302-ve59pybr\files\output.log
+2023-12-18 22:24:13,173 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:13,173 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:15,200 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:15,200 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:17,223 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:17,224 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:17,580 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:24:19,244 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:19,244 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:19,603 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-18 22:24:19,619 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-18 22:24:19,620 DEBUG   SenderThread:9136 [sender.py:send_request():407] send_request: stop_status
+2023-12-18 22:24:21,275 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:21,276 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:22,918 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:24:23,288 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:23,289 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:25,314 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:25,315 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:27,340 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:27,340 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:27,969 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:24:29,371 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:29,371 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:31,394 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:31,394 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:33,028 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:24:33,415 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:33,415 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:34,353 DEBUG   SenderThread:9136 [sender.py:send():380] send: stats
+2023-12-18 22:24:34,618 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-18 22:24:34,632 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-18 22:24:34,633 DEBUG   SenderThread:9136 [sender.py:send_request():407] send_request: stop_status
+2023-12-18 22:24:35,479 ERROR   gpu       :9136 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-18 22:24:35,498 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:35,498 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:37,529 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:37,529 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:38,567 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:24:39,028 INFO    Thread-16 :9136 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222302-ve59pybr\files\output.log
+2023-12-18 22:24:39,572 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:39,573 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:41,063 INFO    Thread-16 :9136 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222302-ve59pybr\files\output.log
+2023-12-18 22:24:41,604 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:41,604 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:43,084 INFO    Thread-16 :9136 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222302-ve59pybr\files\output.log
+2023-12-18 22:24:43,637 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:43,638 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:43,912 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:24:45,670 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:45,670 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:46,098 INFO    Thread-16 :9136 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222302-ve59pybr\files\output.log
+2023-12-18 22:24:47,103 INFO    Thread-16 :9136 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222302-ve59pybr\files\output.log
+2023-12-18 22:24:47,690 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:47,690 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:49,211 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:24:49,619 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-18 22:24:49,649 DEBUG   HandlerThread:9136 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-18 22:24:49,650 DEBUG   SenderThread:9136 [sender.py:send_request():407] send_request: stop_status
+2023-12-18 22:24:49,707 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:49,707 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:51,728 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:24:51,728 ERROR   gpu       :9136 [interfaces.py:monitor():144] Failed to sample metric: Not Supported

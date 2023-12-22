@@ -1,0 +1,9 @@
+
+  0%|          | 0/705 [00:00<?, ?it/s]
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x0000027FC69AD540>> (for post_run_cell), with arguments args (<ExecutionResult object at 27f3ccc9ba0, execution_count=21 error_before_exec=None error_in_exec=list index out of range info=<ExecutionInfo object at 27f3ccc9db0, raw_cell="from transformers import Trainer, TrainingArgument.." store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X45sZmlsZQ%3D%3D> result=None>,),kwargs {}:
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x0000027FC69AD540>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 27fc89d5510, raw_cell="import builtins
+import ipykernel
+builtins.print(ip.." store_history=False silent=False shell_futures=True cell_id=None>,),kwargs {}:
+6.27.1
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x0000027FC69AD540>> (for post_run_cell), with arguments args (<ExecutionResult object at 27fc89d52d0, execution_count=None error_before_exec=None error_in_exec=None info=<ExecutionInfo object at 27fc89d5510, raw_cell="import builtins
+import ipykernel

@@ -1,0 +1,87 @@
+2023-12-18 22:25:29,245 INFO    StreamThr :15372 [internal.py:wandb_internal():86] W&B internal server running at pid: 15372, started at: 2023-12-18 22:25:29.244795
+2023-12-18 22:25:29,246 DEBUG   HandlerThread:15372 [handler.py:handle_request():146] handle_request: status
+2023-12-18 22:25:29,253 INFO    WriterThread:15372 [datastore.py:open_for_write():85] open: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222529-v8bian8j\run-v8bian8j.wandb
+2023-12-18 22:25:29,255 DEBUG   SenderThread:15372 [sender.py:send():380] send: header
+2023-12-18 22:25:29,338 DEBUG   SenderThread:15372 [sender.py:send():380] send: run
+2023-12-18 22:25:29,841 INFO    SenderThread:15372 [dir_watcher.py:__init__():211] watching files in: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222529-v8bian8j\files
+2023-12-18 22:25:29,841 INFO    SenderThread:15372 [sender.py:_start_run_threads():1122] run started: v8bian8j with start time 1702927529.246795
+2023-12-18 22:25:29,851 DEBUG   HandlerThread:15372 [handler.py:handle_request():146] handle_request: check_version
+2023-12-18 22:25:29,853 DEBUG   SenderThread:15372 [sender.py:send_request():407] send_request: check_version
+2023-12-18 22:25:30,092 DEBUG   HandlerThread:15372 [handler.py:handle_request():146] handle_request: run_start
+2023-12-18 22:25:30,113 DEBUG   HandlerThread:15372 [system_info.py:__init__():32] System info init
+2023-12-18 22:25:30,114 DEBUG   HandlerThread:15372 [system_info.py:__init__():47] System info init done
+2023-12-18 22:25:30,114 INFO    HandlerThread:15372 [system_monitor.py:start():194] Starting system monitor
+2023-12-18 22:25:30,114 INFO    SystemMonitor:15372 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-12-18 22:25:30,114 INFO    HandlerThread:15372 [system_monitor.py:probe():214] Collecting system info
+2023-12-18 22:25:30,122 INFO    SystemMonitor:15372 [interfaces.py:start():190] Started cpu monitoring
+2023-12-18 22:25:30,123 INFO    SystemMonitor:15372 [interfaces.py:start():190] Started disk monitoring
+2023-12-18 22:25:30,124 INFO    SystemMonitor:15372 [interfaces.py:start():190] Started gpu monitoring
+2023-12-18 22:25:30,133 INFO    SystemMonitor:15372 [interfaces.py:start():190] Started memory monitoring
+2023-12-18 22:25:30,143 INFO    SystemMonitor:15372 [interfaces.py:start():190] Started network monitoring
+2023-12-18 22:25:30,160 DEBUG   HandlerThread:15372 [system_info.py:probe():196] Probing system
+2023-12-18 22:25:30,162 DEBUG   HandlerThread:15372 [system_info.py:_probe_git():181] Probing git
+2023-12-18 22:25:30,173 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:30,173 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:30,317 DEBUG   HandlerThread:15372 [system_info.py:_probe_git():189] Probing git done
+2023-12-18 22:25:30,318 DEBUG   HandlerThread:15372 [system_info.py:probe():244] Probing system done
+2023-12-18 22:25:30,318 DEBUG   HandlerThread:15372 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.10.5', 'heartbeatAt': '2023-12-18T19:25:30.160353', 'startedAt': '2023-12-18T19:25:29.232790', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/L0u1Za/hse-nlp', 'commit': '94964c4fc91bfe39cf342b6157e0f91482d34b85'}, 'email': 'luiza.nigogosova@leroymerlin.ru', 'root': 'C:/Users/60130060/hse-nlp', 'host': 'HQ6016', 'username': '60130060', 'executable': 'c:\\Python310\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2803.0, 'min': 0.0, 'max': 2803.0}, 'cpu_freq_per_core': [{'current': 2803.0, 'min': 0.0, 'max': 2803.0}], 'disk': {'/': {'total': 475.33300399780273, 'used': 431.07928466796875}}, 'gpu': 'NVIDIA GeForce MX450', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce MX450', 'memory_total': 2147483648}], 'memory': {'total': 15.788383483886719}}
+2023-12-18 22:25:30,319 INFO    HandlerThread:15372 [system_monitor.py:probe():224] Finished collecting system info
+2023-12-18 22:25:30,319 INFO    HandlerThread:15372 [system_monitor.py:probe():227] Publishing system info
+2023-12-18 22:25:30,319 DEBUG   HandlerThread:15372 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-18 22:25:30,321 DEBUG   HandlerThread:15372 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-18 22:25:30,323 INFO    HandlerThread:15372 [system_monitor.py:probe():229] Finished publishing system info
+2023-12-18 22:25:30,335 DEBUG   SenderThread:15372 [sender.py:send():380] send: files
+2023-12-18 22:25:30,336 INFO    SenderThread:15372 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-12-18 22:25:30,360 DEBUG   HandlerThread:15372 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-18 22:25:30,360 DEBUG   SenderThread:15372 [sender.py:send_request():407] send_request: stop_status
+2023-12-18 22:25:30,363 DEBUG   HandlerThread:15372 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-18 22:25:30,728 DEBUG   SenderThread:15372 [sender.py:send():380] send: telemetry
+2023-12-18 22:25:30,728 DEBUG   SenderThread:15372 [sender.py:send():380] send: config
+2023-12-18 22:25:30,730 DEBUG   SenderThread:15372 [sender.py:send():380] send: metric
+2023-12-18 22:25:30,730 DEBUG   SenderThread:15372 [sender.py:send():380] send: telemetry
+2023-12-18 22:25:30,730 DEBUG   SenderThread:15372 [sender.py:send():380] send: metric
+2023-12-18 22:25:30,730 WARNING SenderThread:15372 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-12-18 22:25:30,730 DEBUG   SenderThread:15372 [sender.py:send():380] send: telemetry
+2023-12-18 22:25:30,851 INFO    Thread-16 :15372 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222529-v8bian8j\files\requirements.txt
+2023-12-18 22:25:30,851 INFO    Thread-16 :15372 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222529-v8bian8j\files\output.log
+2023-12-18 22:25:30,852 INFO    Thread-16 :15372 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222529-v8bian8j\files\wandb-metadata.json
+2023-12-18 22:25:31,011 INFO    wandb-upload_0:15372 [upload_job.py:push():131] Uploaded file C:\Users\60130060\AppData\Local\Temp\tmpbtlf7ckdwandb\rtafw4ps-wandb-metadata.json
+2023-12-18 22:25:32,200 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:32,201 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:32,860 INFO    Thread-16 :15372 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222529-v8bian8j\files\output.log
+2023-12-18 22:25:34,222 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:34,222 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:34,860 DEBUG   HandlerThread:15372 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:25:36,250 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:36,250 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:38,270 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:38,271 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:39,895 DEBUG   HandlerThread:15372 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:25:40,286 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:40,286 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:42,299 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:42,299 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:44,327 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:44,327 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:44,953 DEBUG   HandlerThread:15372 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:25:45,376 DEBUG   HandlerThread:15372 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-18 22:25:45,377 DEBUG   HandlerThread:15372 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-18 22:25:45,377 DEBUG   SenderThread:15372 [sender.py:send_request():407] send_request: stop_status
+2023-12-18 22:25:46,360 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:46,360 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:48,393 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:48,393 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:50,448 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:50,449 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:50,675 DEBUG   HandlerThread:15372 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:25:52,484 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:52,485 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:53,069 INFO    Thread-16 :15372 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222529-v8bian8j\files\output.log
+2023-12-18 22:25:54,504 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:54,504 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:56,032 DEBUG   HandlerThread:15372 [handler.py:handle_request():146] handle_request: status_report
+2023-12-18 22:25:56,529 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:56,530 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:57,109 INFO    Thread-16 :15372 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\60130060\hse-nlp\homeworks\hw4\wandb\run-20231218_222529-v8bian8j\files\output.log
+2023-12-18 22:25:58,563 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-18 22:25:58,564 ERROR   gpu       :15372 [interfaces.py:monitor():144] Failed to sample metric: Not Supported

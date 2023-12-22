@@ -1,0 +1,128 @@
+
+  0%|          | 0/705 [00:00<?, ?it/s]
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for post_run_cell), with arguments args (<ExecutionResult object at 1dd5420dcf0, execution_count=22 error_before_exec=None error_in_exec=CUDA out of memory. Tried to allocate 12.00 MiB. GPU 0 has a total capacty of 2.00 GiB of which 0 bytes is free. Of the allocated memory 1008.72 MiB is allocated by PyTorch, and 43.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF info=<ExecutionInfo object at 1dd5420fee0, raw_cell="from transformers import Trainer, TrainingArgument.." store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X45sZmlsZQ%3D%3D> result=None>,),kwargs {}:
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 1dd5420c640, raw_cell="model" store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X63sZmlsZQ%3D%3D>,),kwargs {}:
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for post_run_cell), with arguments args (<ExecutionResult object at 1dd5420c6d0, execution_count=23 error_before_exec=None error_in_exec=None info=<ExecutionInfo object at 1dd5420c640, raw_cell="model" store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X63sZmlsZQ%3D%3D> result=BertForTokenClassification(
+  (bert): BertModel(
+    (embeddings): BertEmbeddings(
+      (word_embeddings): Embedding(28996, 768, padding_idx=0)
+      (position_embeddings): Embedding(512, 768)
+      (token_type_embeddings): Embedding(2, 768)
+      (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (encoder): BertEncoder(
+      (layer): ModuleList(
+        (0-11): 12 x BertLayer(
+          (attention): BertAttention(
+            (self): BertSelfAttention(
+              (query): Linear(in_features=768, out_features=768, bias=True)
+              (key): Linear(in_features=768, out_features=768, bias=True)
+              (value): Linear(in_features=768, out_features=768, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (output): BertSelfOutput(
+              (dense): Linear(in_features=768, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (intermediate): BertIntermediate(
+            (dense): Linear(in_features=768, out_features=3072, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): BertOutput(
+            (dense): Linear(in_features=3072, out_features=768, bias=True)
+            (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+      )
+    )
+  )
+  (dropout): Dropout(p=0.1, inplace=False)
+  (classifier): Linear(in_features=768, out_features=9, bias=True)
+)>,),kwargs {}:
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 1dd5c90ed40, raw_cell="model.bert" store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X63sZmlsZQ%3D%3D>,),kwargs {}:
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for post_run_cell), with arguments args (<ExecutionResult object at 1dd5c90ec50, execution_count=24 error_before_exec=None error_in_exec=None info=<ExecutionInfo object at 1dd5c90ed40, raw_cell="model.bert" store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X63sZmlsZQ%3D%3D> result=BertModel(
+  (embeddings): BertEmbeddings(
+    (word_embeddings): Embedding(28996, 768, padding_idx=0)
+    (position_embeddings): Embedding(512, 768)
+    (token_type_embeddings): Embedding(2, 768)
+    (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (encoder): BertEncoder(
+    (layer): ModuleList(
+      (0-11): 12 x BertLayer(
+        (attention): BertAttention(
+          (self): BertSelfAttention(
+            (query): Linear(in_features=768, out_features=768, bias=True)
+            (key): Linear(in_features=768, out_features=768, bias=True)
+            (value): Linear(in_features=768, out_features=768, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (output): BertSelfOutput(
+            (dense): Linear(in_features=768, out_features=768, bias=True)
+            (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (intermediate): BertIntermediate(
+          (dense): Linear(in_features=768, out_features=3072, bias=True)
+          (intermediate_act_fn): GELUActivation()
+        )
+        (output): BertOutput(
+          (dense): Linear(in_features=3072, out_features=768, bias=True)
+          (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+  )
+)>,),kwargs {}:
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 1dd5c90f340, raw_cell="model.bert.embeddins" store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X63sZmlsZQ%3D%3D>,),kwargs {}:
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for post_run_cell), with arguments args (<ExecutionResult object at 1dd5c90eb60, execution_count=25 error_before_exec=None error_in_exec='BertModel' object has no attribute 'embeddins' info=<ExecutionInfo object at 1dd5c90f340, raw_cell="model.bert.embeddins" store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X63sZmlsZQ%3D%3D> result=None>,),kwargs {}:
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 1dd5420f8b0, raw_cell="model.bert.embeddings" store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X63sZmlsZQ%3D%3D>,),kwargs {}:
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for post_run_cell), with arguments args (<ExecutionResult object at 1dd5420c9d0, execution_count=26 error_before_exec=None error_in_exec=None info=<ExecutionInfo object at 1dd5420f8b0, raw_cell="model.bert.embeddings" store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X63sZmlsZQ%3D%3D> result=BertEmbeddings(
+  (word_embeddings): Embedding(28996, 768, padding_idx=0)
+  (position_embeddings): Embedding(512, 768)
+  (token_type_embeddings): Embedding(2, 768)
+  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+  (dropout): Dropout(p=0.1, inplace=False)
+)>,),kwargs {}:
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 1de184a9e10, raw_cell="from module import EmbedFactorized
+model.bert.embe.." store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X50sZmlsZQ%3D%3D>,),kwargs {}:
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for post_run_cell), with arguments args (<ExecutionResult object at 1de184a9e40, execution_count=27 error_before_exec=None error_in_exec=None info=<ExecutionInfo object at 1de184a9e10, raw_cell="from module import EmbedFactorized
+model.bert.embe.." store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X50sZmlsZQ%3D%3D> result=Embedding(28996, 768, padding_idx=0)>,),kwargs {}:
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 1dd5420f8b0, raw_cell="from module import EmbedFactorized
+model.bert.embe.." store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X50sZmlsZQ%3D%3D>,),kwargs {}:
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for post_run_cell), with arguments args (<ExecutionResult object at 1dd5420c4c0, execution_count=28 error_before_exec=None error_in_exec=EmbedFactorized.__init__() missing 1 required positional argument: 'E' info=<ExecutionInfo object at 1dd5420f8b0, raw_cell="from module import EmbedFactorized
+model.bert.embe.." store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X50sZmlsZQ%3D%3D> result=None>,),kwargs {}:
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 1dd5420d840, raw_cell="from module import EmbedFactorized
+model.bert.embe.." store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X50sZmlsZQ%3D%3D>,),kwargs {}:
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for post_run_cell), with arguments args (<ExecutionResult object at 1dd5420c7f0, execution_count=29 error_before_exec=None error_in_exec=cannot assign module before Module.__init__() call info=<ExecutionInfo object at 1dd5420d840, raw_cell="from module import EmbedFactorized
+  0%|          | 0/705 [00:00<?, ?it/s][autoreload of module failed: Traceback (most recent call last):
+  File "C:\Users\60130060\AppData\Roaming\Python\Python310\site-packages\IPython\extensions\autoreload.py", line 276, in check
+    superreload(m, reload, self.old_objects)
+  File "C:\Users\60130060\AppData\Roaming\Python\Python310\site-packages\IPython\extensions\autoreload.py", line 500, in superreload
+    update_generic(old_obj, new_obj)
+  File "C:\Users\60130060\AppData\Roaming\Python\Python310\site-packages\IPython\extensions\autoreload.py", line 397, in update_generic
+    update(a, b)
+  File "C:\Users\60130060\AppData\Roaming\Python\Python310\site-packages\IPython\extensions\autoreload.py", line 349, in update_class
+    if update_generic(old_obj, new_obj):
+  File "C:\Users\60130060\AppData\Roaming\Python\Python310\site-packages\IPython\extensions\autoreload.py", line 397, in update_generic
+    update(a, b)
+  File "C:\Users\60130060\AppData\Roaming\Python\Python310\site-packages\IPython\extensions\autoreload.py", line 309, in update_function
+    setattr(old, name, getattr(new, name))
+ValueError: __init__() requires a code object with 0 free vars, not 1
+]
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 1de184aa650, raw_cell="from module import EmbedFactorized
+model.bert.embe.." store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X50sZmlsZQ%3D%3D>,),kwargs {}:
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for post_run_cell), with arguments args (<ExecutionResult object at 1de184aa080, execution_count=30 error_before_exec=None error_in_exec=None info=<ExecutionInfo object at 1de184aa650, raw_cell="from module import EmbedFactorized
+model.bert.embe.." store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X50sZmlsZQ%3D%3D> result=None>,),kwargs {}:
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 1dd5420f5e0, raw_cell="%load_ext autoreload
+%autoreload 2" store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#W1sZmlsZQ%3D%3D>,),kwargs {}:
+The autoreload extension is already loaded. To reload it, use:
+  %reload_ext autoreload
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000001DDD255D1E0>> (for post_run_cell), with arguments args (<ExecutionResult object at 1dd5420c670, execution_count=31 error_before_exec=None error_in_exec=None info=<ExecutionInfo object at 1dd5420f5e0, raw_cell="%load_ext autoreload

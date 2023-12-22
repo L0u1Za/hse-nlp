@@ -1,0 +1,271 @@
+
+  0%|          | 0/705 [00:00<?, ?it/s]
+idx 10330
+True
+idx 5613
+True
+idx 12022
+True
+idx 10311
+True
+idx 7222
+True
+idx 14448
+True
+idx 6486
+True
+idx 5787
+True
+idx 9194
+True
+idx 12695
+True
+idx 10076
+True
+idx 10850
+True
+idx 382
+True
+idx 5785
+True
+idx 601
+True
+idx 3931
+True
+idx 13191
+True
+idx 14033
+True
+idx 10217
+True
+idx 8465
+True
+idx 5607
+True
+idx 2547
+True
+idx 7883
+True
+idx 14051
+True
+idx 9365
+True
+idx 6281
+True
+idx 13007
+True
+idx 8939
+True
+idx 5051
+True
+idx 12679
+True
+idx 13794
+True
+idx 3031
+True
+idx 79
+True
+idx 12557
+True
+idx 7095
+True
+idx 14020
+True
+idx 14375
+True
+idx 339
+True
+idx 926
+True
+idx 2025
+True
+idx 7776
+True
+idx 133
+True
+idx 1715
+True
+idx 12046
+True
+idx 12243
+True
+idx 8271
+True
+idx 1509
+True
+idx 12522
+True
+idx 739
+True
+idx 13002
+True
+idx 10232
+True
+idx 11905
+True
+idx 7472
+True
+idx 1926
+True
+idx 13088
+True
+idx 9824
+True
+idx 811
+True
+idx 5605
+True
+idx 5244
+True
+idx 13430
+True
+idx 7080
+True
+idx 1591
+True
+idx 302
+True
+idx 8212
+True
+idx 9928
+True
+idx 4248
+True
+idx 4549
+True
+idx 6713
+True
+idx 4899
+True
+idx 5802
+True
+idx 13095
+True
+idx 10085
+True
+idx 5434
+True
+idx 4652
+True
+idx 9150
+True
+idx 10518
+True
+idx 12469
+True
+idx 5078
+True
+idx 1880
+True
+idx 2550
+True
+idx 10616
+True
+idx 4302
+True
+idx 12630
+True
+idx 6820
+True
+idx 3944
+True
+idx 7506
+True
+idx 2875
+True
+idx 13446
+True
+idx 1251
+True
+idx 9742
+True
+idx 3217
+True
+idx 2478
+True
+idx 11979
+True
+idx 14845
+True
+idx 9263
+True
+idx 124
+True
+idx 9417
+True
+idx 2018
+True
+idx 11583
+True
+idx 505
+True
+idx 5642
+True
+idx 9679
+True
+idx 6423
+True
+idx 14808
+True
+idx 11841
+True
+idx 9138
+True
+idx 3271
+True
+idx 783
+True
+idx 3275
+True
+idx 4873
+True
+idx 8769
+True
+idx 7545
+True
+idx 12055
+True
+idx 9044
+True
+idx 14648
+True
+idx 10950
+True
+idx 3026
+True
+idx 3124
+True
+idx 3457
+True
+idx 9594
+True
+idx 8621
+True
+idx 5297
+True
+idx 8555
+True
+idx 1004
+True
+idx 11072
+True
+idx 8268
+True
+idx 14531
+True
+idx 4824
+True
+KeyboardInterrupt
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000002923B817A00>> (for post_run_cell), with arguments args (<ExecutionResult object at 291e41f1c90, execution_count=78 error_before_exec=None error_in_exec=CUDA out of memory. Tried to allocate 12.00 MiB. GPU 0 has a total capacty of 2.00 GiB of which 0 bytes is free. Of the allocated memory 1008.72 MiB is allocated by PyTorch, and 43.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF info=<ExecutionInfo object at 291de13cf70, raw_cell="from transformers import Trainer, TrainingArgument.." store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X45sZmlsZQ%3D%3D> result=None>,),kwargs {}:
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000002923B817A00>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 291a33dcf40, raw_cell="%load_ext autoreload
+%autoreload 2" store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#W1sZmlsZQ%3D%3D>,),kwargs {}:
+The autoreload extension is already loaded. To reload it, use:
+  %reload_ext autoreload
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000002923B817A00>> (for post_run_cell), with arguments args (<ExecutionResult object at 291a33dcb20, execution_count=79 error_before_exec=None error_in_exec=None info=<ExecutionInfo object at 291a33dcf40, raw_cell="%load_ext autoreload
+%autoreload 2" store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#W1sZmlsZQ%3D%3D> result=None>,),kwargs {}:
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000002923B817A00>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 291a33dda50, raw_cell="%load_ext autoreload
+%autoreload 2" store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#W1sZmlsZQ%3D%3D>,),kwargs {}:
+The autoreload extension is already loaded. To reload it, use:
+  %reload_ext autoreload
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x000002923B817A00>> (for post_run_cell), with arguments args (<ExecutionResult object at 291a33dc820, execution_count=80 error_before_exec=None error_in_exec=None info=<ExecutionInfo object at 291a33dda50, raw_cell="%load_ext autoreload

@@ -1,0 +1,52 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.10.5",
+    "heartbeatAt": "2023-12-18T19:14:25.631055",
+    "startedAt": "2023-12-18T19:14:24.624790",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/L0u1Za/hse-nlp",
+        "commit": "94964c4fc91bfe39cf342b6157e0f91482d34b85"
+    },
+    "email": "luiza.nigogosova@leroymerlin.ru",
+    "root": "C:/Users/60130060/hse-nlp",
+    "host": "HQ6016",
+    "username": "60130060",
+    "executable": "c:\\Python310\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2803.0,
+        "min": 0.0,
+        "max": 2803.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2803.0,
+            "min": 0.0,
+            "max": 2803.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 475.33300399780273,
+            "used": 431.59859466552734
+        }
+    },
+    "gpu": "NVIDIA GeForce MX450",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce MX450",
+            "memory_total": 2147483648
+        }
+    ],
+    "memory": {
+        "total": 15.788383483886719
+    }
+}

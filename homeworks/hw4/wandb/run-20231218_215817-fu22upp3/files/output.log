@@ -1,0 +1,23 @@
+
+  0%|          | 0/5622 [00:00<?, ?it/s]
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x0000024EBC3BA5C0>> (for post_run_cell), with arguments args (<ExecutionResult object at 24e7642ca60, execution_count=22 error_before_exec=None error_in_exec=list index out of range info=<ExecutionInfo object at 24e7642c4c0, raw_cell="from transformers import Trainer, TrainingArgument.." store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X45sZmlsZQ%3D%3D> result=None>,),kwargs {}:
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x0000024EBC3BA5C0>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 24ec7419510, raw_cell="import builtins
+import ipykernel
+builtins.print(ip.." store_history=False silent=False shell_futures=True cell_id=None>,),kwargs {}:
+6.26.0
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x0000024EBC3BA5C0>> (for post_run_cell), with arguments args (<ExecutionResult object at 24ec74192d0, execution_count=None error_before_exec=None error_in_exec=None info=<ExecutionInfo object at 24ec7419510, raw_cell="import builtins
+import ipykernel
+builtins.print(ip.." store_history=False silent=False shell_futures=True cell_id=None> result=None>,),kwargs {}:
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x0000024EBC3BA5C0>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 24ec74198a0, raw_cell="import builtins
+import ipykernel
+builtins.print(ip.." store_history=False silent=False shell_futures=True cell_id=None>,),kwargs {}:
+6.26.0
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x0000024EBC3BA5C0>> (for post_run_cell), with arguments args (<ExecutionResult object at 24ec7419480, execution_count=None error_before_exec=None error_in_exec=None info=<ExecutionInfo object at 24ec74198a0, raw_cell="import builtins
+import ipykernel
+builtins.print(ip.." store_history=False silent=False shell_futures=True cell_id=None> result=None>,),kwargs {}:
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x0000024EBC3BA5C0>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 24ec7418c70, raw_cell="import builtins
+import ipykernel
+builtins.print(ip.." store_history=False silent=False shell_futures=True cell_id=None>,),kwargs {}:
+6.26.0
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x0000024EBC3BA5C0>> (for post_run_cell), with arguments args (<ExecutionResult object at 24ec7419150, execution_count=None error_before_exec=None error_in_exec=None info=<ExecutionInfo object at 24ec7418c70, raw_cell="import builtins
+import ipykernel

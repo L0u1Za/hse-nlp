@@ -1,0 +1,12 @@
+
+  0%|          | 0/705 [00:00<?, ?it/s]
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x0000014A45129EA0>> (for post_run_cell), with arguments args (<ExecutionResult object at 14a4325a980, execution_count=23 error_before_exec=None error_in_exec=list index out of range info=<ExecutionInfo object at 14a43259ba0, raw_cell="from transformers import Seq2SeqTrainer
+from trans.." store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X43sZmlsZQ%3D%3D> result=None>,),kwargs {}:
+  0%|          | 0/705 [00:00<?, ?it/s]
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x0000014A45129EA0>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 14a47240700, raw_cell="from transformers import Seq2SeqTrainer
+from trans.." store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X43sZmlsZQ%3D%3D>,),kwargs {}:
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x0000014A45129EA0>> (for post_run_cell), with arguments args (<ExecutionResult object at 14a472409d0, execution_count=24 error_before_exec=None error_in_exec=list index out of range info=<ExecutionInfo object at 14a47240700, raw_cell="from transformers import Seq2SeqTrainer
+from trans.." store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X43sZmlsZQ%3D%3D> result=None>,),kwargs {}:
+Error in callback <bound method _WandbInit._resume_backend of <wandb.sdk.wandb_init._WandbInit object at 0x0000014A45129EA0>> (for pre_run_cell), with arguments args (<ExecutionInfo object at 14a47241780, raw_cell="from transformers import Seq2SeqTrainer
+from trans.." store_history=True silent=False shell_futures=True cell_id=vscode-notebook-cell:/c%3A/Users/60130060/hse-nlp/homeworks/hw4/hw4.ipynb#X43sZmlsZQ%3D%3D>,),kwargs {}:
+Error in callback <bound method _WandbInit._pause_backend of <wandb.sdk.wandb_init._WandbInit object at 0x0000014A45129EA0>> (for post_run_cell), with arguments args (<ExecutionResult object at 14a47241690, execution_count=25 error_before_exec=None error_in_exec=list index out of range info=<ExecutionInfo object at 14a47241780, raw_cell="from transformers import Seq2SeqTrainer
